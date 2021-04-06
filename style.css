@@ -5,6 +5,22 @@ body {
   font-family: Lato, sans-serif;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li,
+h3 {
+  list-style: none;
+}
+
+input,
+button {
+  outline: none;
+}
+
+/* Header */
 .header {
   width: 500px;
   margin: 0 auto;
@@ -28,33 +44,19 @@ body {
 
 }
 
+/* Main */
 .main-wrapper {
   display: block;
   width: 400px;
   margin: 0 auto 0;
 }
 
-.task {
+.task-label {
   width: 56%;
   display: inline-block;
 }
 
-ul {
-  margin: 0;
-  padding: 0px;
-}
-
-li,
-h3 {
-  list-style: none;
-}
-
-input,
-button {
-  outline: none;
-}
-
-button {
+.btn {
   background: none;
   border: 0px;
   color: #888;
@@ -64,8 +66,12 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.btn:hover {
   color: #3a3A3a;
+}
+
+.btn-add:hover {
+  color: #0FC57C;
 }
 
 /* Heading */
@@ -93,23 +99,15 @@ button:hover {
   color: #888;
 }
 
+/* Inputs */
 .input-text:focus {
   color: #333;
 }
 
-/* New Task */
-/* label[for="task-new"] {
-  display: block;
-  margin: 0 0 20px;
-} */
-
-input#task-new {
+.input-text#task-new {
   width: 318px;
 }
 
-.btn-add:hover {
-  color: #0FC57C;
-}
 
 /* Task list */
 li {
